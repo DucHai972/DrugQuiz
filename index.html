@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug Name Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .question-container {
+            margin-bottom: 20px;
+        }
+        .choices {
+            list-style-type: none;
+            padding: 0;
+        }
+        .choices li {
+            margin: 5px 0;
+        }
+        .choices li button {
+            padding: 10px;
+            font-size: 16px;
+        }
+        #feedback {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        #next-question {
+            display: none;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Drug Name Quiz</h1>
+    <div id="quiz-container">
+        <div id="question-container" class="question-container">
+            <h2 id="question-text"></h2>
+            <ul id="choices-list" class="choices"></ul>
+        </div>
+        <div id="feedback"></div>
+        <button id="next-question">Next Question</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
